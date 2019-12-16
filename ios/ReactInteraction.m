@@ -15,32 +15,34 @@
 
 RCT_EXPORT_MODULE();
 + (instancetype)shareInstance{
-  static ReactInteraction *instance = nil;
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    instance = [[[self class] alloc] init];
-  });
-  return instance;
+    static ReactInteraction *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+      instance = [[[self class] alloc] init];
+    });
+    return instance;
 }
 
 - (NSArray<NSString *> *)supportedEvents{
-  return @[EventWithInfo, EventWithoutInfo];
+    return @[EventWithInfo, EventWithoutInfo];
 }
 
 
-RCT_EXPORT_METHOD(callReactNativeWithOutInfo) {
-  [self.bridge enqueueJSCall:@"RCTDeviceEventEmitter"
+- (void)callReactNativeWithOutInfo{
+    [self.bridge enqueueJSCall:@"RCTDeviceEventEmitter"
                       method:@"emit"
                         args:@[EventWithoutInfo]
                   completion:nil];
-  }
+}
 
 
-RCT_EXPORT_METHOD(callReactNativeWithInfo:(NSString *)msg) {
-  [self.bridge enqueueJSCall:@"RCTDeviceEventEmitter"
+
+- (void)callReactNativeWithInfo:(NSString *)info{
+    [self.bridge enqueueJSCall:@"RCTDeviceEventEmitter"
                       method:@"emit"
-                        args:@[EventWithInfo, msg]
+                        args:@[EventWithInfo, info]
                   completion:nil];
+
 }
 
 

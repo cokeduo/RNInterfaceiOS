@@ -12,7 +12,7 @@
 #import <React/RCTEventEmitter.h>
 
 // ios call rn
-@interface ReactInteraction : RCTEventEmitter <RCTBridgeModule>
+@interface ReactInteraction : RCTEventEmitter
 
 + (instancetype)shareInstance;
 

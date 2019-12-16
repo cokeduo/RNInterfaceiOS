@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06f3afd4-2f19-4fa1-a226-cf25d928c3ba" name="Default Changelist" comment="" />
+    <list default="true" id="06f3afd4-2f19-4fa1-a226-cf25d928c3ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/des.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JJApp1.js" beforeDir="false" afterPath="$PROJECT_DIR$/JJApp1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/JJViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/JJViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/ReactInteraction.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/ReactInteraction.m" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +26,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -57,10 +67,25 @@
       <option name="presentableId" value="Default" />
       <updated>1573725294860</updated>
       <workItem from="1573725297881" duration="9029000" />
+      <workItem from="1573800134382" duration="2729000" />
+      <workItem from="1573983512066" duration="50000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

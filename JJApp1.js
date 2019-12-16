@@ -38,34 +38,22 @@ class JJApp1 extends Component {
     }
 
     transferIOS = () => {
-        // NativeInteraction.RNTransferIOS();
         NativeInteraction.RNCallIOSWithoutParams();
     }
 
 
-    transferIOS1 = () => {
-        // NativeInteraction.RNTransferIOSWithParameter('{\'para1\':\'rndata1\',\'para2\':\'rndata2\'}');
+    transferIOS1 = ()=> {
         NativeInteraction.RNCallIOSWithParameter('123');
     }
 
 
-    transferIOS2 = () => {
-        // NativeInteraction.RNTransferIOSWithCallBack((data) => {
-        //     this.setState({notice: data});
-        // });
-
+    transferIOS2 = ()=> {
         NativeInteraction.RNCallIOSWithCallBack((data) => {
             this.setState({notice: data});
         });
     }
 
-    transferIOS3 = () => {
-        // NativeInteraction.RNTransferIOSWithParameterAndCallBack('rndata1','rndata2').then(result =>{
-        //     let jsonString = JSON.stringify(result);
-        //     this.setState({notice: jsonString});
-        // }).catch(error=>{
-        // });
-
+    transferIOS3 = ()=> {
         NativeInteraction.RNCallIOSWithParameterAndCallBack('rn_param1', 'rn_param2').then(result => {
             let jsonString = JSON.stringify(result);
             this.setState({notice: jsonString});
@@ -73,10 +61,6 @@ class JJApp1 extends Component {
             console.error(error);
         });
     }
-
-
-
-
 
     render() {
         return(
