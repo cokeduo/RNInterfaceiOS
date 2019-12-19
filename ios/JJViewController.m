@@ -55,6 +55,17 @@
                                           initialProperties:nil];
   rnView.bounds = RNBounds;
   rnView.center = self.view.center;
+  
+  // rn 页面加载中的loading视图
+  rnView.loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+  
+  
+//  自定义loading视图
+//  UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+//  view.backgroundColor = [UIColor redColor];
+//  rnView.loadingView = view;
+  
+  
   [self.view addSubview:rnView];
   
 }
